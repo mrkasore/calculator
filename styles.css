@@ -1,0 +1,43 @@
+*  {
+    background-color: aqua;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border-color: black;
+}
+
+.item-container {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#plus {
+    grid-row: span 2;
+}
+
+.window {
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.window_value {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
